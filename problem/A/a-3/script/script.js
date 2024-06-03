@@ -6,4 +6,27 @@ $(function(){
     $(".nav>ul>li").mouseout(function(){
         $(this).find(".submenu").stop().slideUp()
     })
+
+    //탭메뉴
+    $(".tabmenu>li").click(function(){
+        $(".tabmenu>li").removeClass("on");
+        $(this).addClass("on");
+
+        var i =$(this).index()
+
+        console.log(i) 
+
+        $(".tabcon").hide()
+        $(".tabcon").eq(i).show()
+    })
+
+    //팝업
+
+    $(".ct").click(function(){
+        $(".popup").show()
+    })
+    
+    $("button").click(function(){
+        $(".popup").hide()
+    })
 })
