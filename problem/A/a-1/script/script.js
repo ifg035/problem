@@ -1,5 +1,5 @@
 $(function(){
-    //슬라이드 
+    //슬라이드 위아래
     function slide(){
         $(".slide ul").animate({top:"-300px"},1000,function(){
             $(".slide ul").append($(".slide ul li").first())
@@ -24,7 +24,7 @@ $(function(){
         return false;
     })
 
-    //메뉴
+    //메뉴 하나씩
     $(".nav>ul>li").mouseenter(function(){
         $(".sub").stop().slideDown();
     })
