@@ -29,4 +29,7 @@ $(function(){
     $("button").click(function(){
         $(".popup").hide()
     })
+
+    //슬라이드
+    
 })
