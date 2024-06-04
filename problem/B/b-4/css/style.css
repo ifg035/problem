@@ -115,28 +115,28 @@ body{
 }
 
 /*slide*/
-#slide{
+/* #slide{ //좌우
     width:1200px;
     height:300px;
-    background-color: #b68282;
     position:relative;
+    overflow:hidden;
 }
 #slide ul{
-    width:100%;
+    display: flex;
+    position:absolute;
+    width:3600px;
     height:300px;
     position:absolute;
-    top:0;
-    left:0;
 }
 #slide ul li{
-    width:100%;
+    position:relative;
+    width:1200px;
     height:300px;
-    position:absolute;
 }
 #slide ul li a{
     display: block;
-    height:100%;
 }
+*/ 
 #slide ul li h2{
     position: absolute;
     top:50%;
@@ -146,6 +146,26 @@ body{
     background-color: #ffffffb0;
     padding:15px;
     border-radius: 50px;
+} 
+
+#slide{
+    width:1200px;
+    height:300px;
+    position:relative;
+    overflow: hidden;
+}
+#slide ul{
+    position:absolute;
+    width:1200px;
+    height:900px;
+}
+#slide ul li{
+    position:relative;
+    width:1200px;
+    height:300px;
+}
+#slide ul li a{
+    display:block;
 }
 #slide ul li.s1{
     background:url(../images/slider01.jpg) no-repeat center/cover;
@@ -156,6 +176,8 @@ body{
 #slide ul li.s3{
     background:url(../images/slider03.jpg) no-repeat center/cover;
 }
+
+
 
 #content{
     width:1200px;

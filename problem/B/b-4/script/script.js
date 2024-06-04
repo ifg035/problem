@@ -15,13 +15,18 @@ $(function(){
         $(".popup").hide()
     })
 
-    //slide
+    //slide //좌 -> 우
     function slide(){
+        // $("#slide ul").animate({left:"-1200px"},1000,function(){
+        //     $("#slide ul").append($("#slide ul li").first());
+        //     $("#slide ul").css({left:0})
+        // })
 
-        $(".slide ul").animate({Left:"-1200px"},1000,function(){
-            $(".slide ul").append($(".slide ul li").first());
-            $(".slide ul").css({Left:0});
+        //위아래
+        $("#slide ul").animate({top:"-300px"},1000,function(){
+            $("#slide ul").append($("#slide ul li").first());
+            $("#slide ul").css({top:0})
         })
     }
-    setInterval(slide,3000)
+    setInterval(slide,2000)
 })
