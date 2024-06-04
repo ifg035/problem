@@ -34,7 +34,6 @@ $(function(){
     var t=0;
 
     function slide(){
-        
         if(t>2){
             t++;
         }else{
@@ -42,6 +41,7 @@ $(function(){
         }
         $(".slide ul li").fadeOut();
         $(".slide ul li").eq(t).fadeIn
-        setInterval(slide,2000)
+
     }
+    setInterval(slide,2000)
 })
