@@ -15,4 +15,12 @@ $(function(){
         })
     }
     setInterval(slide,2000)
+
+    //popup
+    $(".pp").click(function(){
+        $(".popup").show()
+    })
+    $("button").click(function(){
+        $(".popup").hide()
+    })
 })
