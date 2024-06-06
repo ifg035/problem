@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,li,dl{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+body{
+    background-color: #fff;
+    color:#333;
+}
+
+#wrap{
+    position:relative;
+    width:100%;
+    height:750px;
+    /* background: #ffe0e0; */
+}
+
+#header{
+    width:200px;
+    height:650px;
+    background-color: rgb(255, 218, 186);
+}
+#header .logo{
+    width:100%;
+    height:150px;
+    background-color: orange;
+    color:#fff;
+}
+#header .logo h1{
+    text-align:center;
+    font-size: large;
+    font-weight: bold;
+    padding-top:60px;
+}
+
+
+/*nav*/
+
+.nav>ul>li>a{
+    text-align:center;
+    padding-top:12px;
+    background-color: #ff9645;
+    height:40px;
+    display:block;
+}
+.nav>ul>li>a:hover{
+    background-color: #ffc9a5;
+    color:#fff;
+}
+
+.sub{
+    top:40px;
+    left:0;
+    width:100%;
+    background-color: #fff;
+    display: none;
+}
+.sub>li>a{
+    display:block;
+    text-align:center;
+    padding:10px;
+    
+
+}
+.sub a:hover{
+    background-color: #fdb17e;
+    color:#fff;
+}
+
+.container{
+    display: flex;
+}
+
+#right{
+    width:calc(100% - 200px);
+    height:650px;
+    background-color: green;
+}
+
+#slide{
+    display: flex;
+}
+
+/*slide*/
+#slide .slide{
+    width:calc(100% - 230px);
+    height:400px;
+    background-color: orange;
+    overflow:hidden;
+}
+.slide{
+    position: relative;
+}
+.slide ul{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    width:300%;
+    height:400px;
+}
+.slide ul li {
+    width:100%;
+    height:400px;
+}
+.slide ul li.s1{
+    background:url(../images/slider01.jpg) no-repeat center/cover;
+}
+.slide ul li.s2{
+    background:url(../images/slider02.jpg) no-repeat center/cover;
+}
+.slide ul li.s3{
+    background:url(../images/slider03.jpg) no-repeat center/cover;
+}
+
+
+#slide #baner{
+    width:230px;
+    height:400px;
+    color:#fff;
+}
+#baner .b-img{
+    color:#fff;
+    display: block;
+    width:230px;
+    height:400px;
+    background:url(../images/banner.jpg) no-repeat center/cover;
+}
+
+.b-img > p{
+    color:#fff;
+    text-align:right;
+    padding-top:360px;
+    padding-left:10px;
+}
+.b-img p a{
+    color:#fff;
+}
+
+#content{
+    display:flex;
+    width:100%;
+    height:250px;
+    background-color: pink;
+}
+
+.notice{
+    width:50%;
+    height:250px;
+    padding:10px;
+    background-color: #fff;
+}
+.notice .n-text{
+    border-bottom:1px dashed #6e6e6e;
+    display: flex;
+    padding:15px 0 10px 10px;
+}
+
+.notice .n-text p{
+    padding-left:420px;
+}
+
+/*gallery*/
+.gallery{
+    width:50%;
+    height:250px;
+    padding:10px;
+    background-color: rgb(255, 211, 128);
+}
+.gallery .g  ul{
+    display: flex;
+}
+.gallery .g  ul li{
+    margin: 40px 20px;
+}
+.gallery .g >ul>li.g1{
+    width:170px;
+    height:150px;
+    background:url(../images/gallery01.jpg) no-repeat center/cover;
+}
+.gallery .g >ul>li.g2{
+    width:170px;
+    height:150px;
+    background:url(../images/gallery02.jpg) no-repeat center/cover;
+}
+.gallery .g >ul>li.g3{
+    width:170px;
+    height:150px;
+    background:url(../images/gallery03.jpg) no-repeat center/cover;
+}
+
+#footer{
+    display: flex;
+    width:100%;
+    height:100px;
+    background-color: orange;
+}
+
+#footer .f-logo{
+    width:200px;
+    height:100px;
+    text-align:center;
+    background-color: #eee;
+    padding-top:40px;
+    color:#000000;
+}
+#footer .copyright{
+    width:calc(100% - 430px);
+    height:100px;
+    background-color: #eee;
+    text-align:center;
+    padding-top:37px;
+    color:orange
+}
+#footer .family{
+    width:230px;
+    height:100px;
+    padding:25px;
+    background-color: #eee;
+}
+
+.popup{
+    display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    height:250px;
+    background-color: #ffc176;
+    border-radius:10%;
+}
+.pp{
+    font-weight: bold;
+    color:orange;
+}
+.popup ul{
+    text-align:center;
+}
+.popup ul li{
+    margin:30px;
+}
+.popup button{
+    padding:5px;
+}
