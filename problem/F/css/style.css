@@ -31,8 +31,9 @@ body{
     background-color: #ffd5d5;
 }
 #header .logo{
+    margin-top:30px;
     color:#fff;
-    padding:27px;
+    padding:2px;
 }
 
 /*nav*/
@@ -43,16 +44,15 @@ body{
     margin-top:58px;
     display: flex;
     justify-content: right;
-    padding-left:453.5px;
+    padding-left:340px;
 }
 .nav>ul>li{
-    text-align: center;
     position:relative;
+    text-align: center;
 }
 .nav>ul>li>a{
     width:200px;
     text-align: center;
-    width:100%;
     display:block;
     padding:10px 60px;
     background-color: #fff;
@@ -73,7 +73,7 @@ body{
     width:100%;
 }
 .sub>li>a{
-    width:185px;
+    width:200px;
     display:block;
     box-sizing:border-box;
     padding:20px;
