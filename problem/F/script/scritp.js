@@ -8,19 +8,7 @@ $(function(){
     })
 
     //slide
-    var t=0;
-
-    function slide(){
-        if(t<2){
-            t++;
-        }else{
-            t=0;
-        }
-
-        $(".slide ul li").fadeIn()
-        $(".slide ul li").eq(t).fadeOut()
-    }
-    setInterval (slide,2000)
+    
 
     //popup
     $(".pp").click(function(){
