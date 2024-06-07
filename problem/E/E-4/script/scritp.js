@@ -8,13 +8,13 @@ $(function(){
     })
 
     //slide
-    function slide(){
-        $(".slide>ul").animate({left:"-100%"},1000,function(){
-            $(".slide>ul").append($(".slide>ul>li").first())
-            $(".slide>ul").css({left:"0"})
-        })  
-    }
-    setInterval(slide,2000)
+    // function slide(){
+    //     $(".slide>ul").animate({left:"-100%"},1000,function(){
+    //         $(".slide>ul").append($(".slide>ul>li").first())
+    //         $(".slide>ul").css({left:"0"})
+    //     })  
+    // }
+    // setInterval(slide,2000)
 
     //popup
     $(".pp").click(function(){
