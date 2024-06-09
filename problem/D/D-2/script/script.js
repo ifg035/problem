@@ -1,12 +1,17 @@
 $(function(){
     //nav
+    // $(".nav>ul>li").mouseover(function(){
+    //     $(this).children(".sub").stop().slideDown()
+    // })
+    // $(".nav>ul>li").mouseout(function(){
+    //     $(this).children(".sub").stop().slideUp()
+    // })
     $(".nav>ul>li").mouseover(function(){
-        $(this).children(".sub").stop().slideDown()
+        $(".sub").stop().fadeIn()
     })
     $(".nav>ul>li").mouseout(function(){
-        $(this).children(".sub").stop().slideUp()
+        $(".sub").stop().fadeOut()
     })
-
     //slide
     function slide(){
         $(".slide ul").animate({left:"-100%"},1000,function(){

@@ -47,8 +47,7 @@ body{
 
 
 /*nav*/
-
-.nav>ul>li>a{
+/* .nav>ul>li>a{
     text-align:center;
     padding-top:12px;
     background-color: #ff9645;
@@ -73,6 +72,42 @@ body{
     padding:10px;
     
 
+}
+.sub a:hover{
+    background-color: #fdb17e;
+    color:#fff;
+} */
+.nav>ul>li{
+    position:relative;
+}
+.nav>ul>li>a{
+    text-align:center;
+    padding-top:12px;
+    background-color: #ff9645;
+    height:40px;
+    display:block;
+}
+.nav>ul>li>a:hover{
+    background-color: #ffc9a5;
+    color:#fff;
+}
+
+.sub{
+    z-index:10;
+    position:absolute;
+    top:0;
+    left:200px;
+    width:calc(100vw - 200px);
+    background-color: #fff;
+    display: none;
+    }
+.sub>li{
+    display: inline-block;
+}
+.sub>li>a{
+    display:block;
+    text-align:center;
+    padding:10px;
 }
 .sub a:hover{
     background-color: #fdb17e;

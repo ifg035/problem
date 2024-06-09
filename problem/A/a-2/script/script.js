@@ -27,7 +27,7 @@ $(function(){
         })
 
     }
-    setInterval(slide,2000)
+    setInterval(slide,3000)
     
     //popup
     $(".pp").click(function(){

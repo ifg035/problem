@@ -55,7 +55,7 @@ body{
 }
 
 /*nav*/
-#header{
+/* #header{
     position:relative;
 }
 #header::after{
@@ -70,7 +70,7 @@ body{
 }
 #header.on::after{
     height:150px;
-}
+} */
 
 .nav{
     z-index:100;
