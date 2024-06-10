@@ -1,0 +1,9 @@
+$(function(){
+    //nav
+    $(".nav>ul>li").mouseover(function(){
+        $(".sub,.bg").stop().fadeIn();
+    })
+    $(".nav>ul>li").mouseout(function(){
+        $(".sub,.bg").stop().fadeOut();
+    })
+})

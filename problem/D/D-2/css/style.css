@@ -93,13 +93,13 @@ body{
 }
 
 .sub{
+    display: none;
     z-index:10;
     position:absolute;
     top:0;
     left:200px;
     width:calc(100vw - 200px);
     background-color: #fff;
-    display: none;
     }
 .sub>li{
     display: inline-block;
