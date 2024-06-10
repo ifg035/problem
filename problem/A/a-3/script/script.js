@@ -31,17 +31,15 @@ $(function(){
     })
 
     //슬라이드
-    var t=0;
-
+    var t =0;
     function slide(){
         if(t<2){
             t++;
         }else{
             t=0
         }
-        $("#slide ul li").fadeOut();
-        $("#slide ul li").eq(t).fadeIn();
-
+        $(".slide ul li").fadeOut()
+        $(".slide ul li").eq(t).fadeIn()
     }
-    setInterval(slide,2000)
+    setInterval (slide,2000)
 })
